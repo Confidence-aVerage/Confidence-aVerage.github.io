@@ -20,11 +20,6 @@
         gtag('js', new Date());
 
         gtag('config', 'G-PYVRSFMDRL');
-
-        document.getElementById('gifSelector').addEventListener('change', function() {
-            var imgElement = document.getElementById('displayedImage');
-            imgElement.src = this.value;
-        });
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -42,6 +37,13 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script>
+        // JavaScript代码用于处理图片源的更新
+        document.getElementById('gifSelector').addEventListener('change', function() {
+            var imgElement = document.getElementById('displayedImage');
+            imgElement.src = this.value; // 更新图片源为选中的选项值
+        });
+    </script>
 </head>
 
 <body>
