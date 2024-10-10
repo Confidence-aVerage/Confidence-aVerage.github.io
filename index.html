@@ -20,6 +20,11 @@
         gtag('js', new Date());
 
         gtag('config', 'G-PYVRSFMDRL');
+
+        document.getElementById('gifSelector').addEventListener('change', function() {
+            var imgElement = document.getElementById('displayedImage');
+            imgElement.src = this.value;
+        });
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -402,9 +407,15 @@
                         <h2 class="title is-3">How Score distributions are being Morphed by CoVer using Corruptions with Severity Levels 1-5</h2>
                     </div>
                 </div>
+                <select id="gifSelector" class="select columns is-centered" style="margin: 0 auto; display: block;">
+                    <option value="static/images/example1.gif">Option 1</option>
+                    <option value="static/images/example2.gif">Option 2</option>
+                    <option value="static/images/example3.gif">Option 3</option>
+                </select>
+                <br>
                 <div class="container is-max-desktop">
                     <div class="hero-body">
-                        <img src="static/images/example2.gif" style="width: 50%; height: 50%; display: block; margin: 0 auto;">
+                        <img id="displayedImage" src="static/images/example2.gif" style="width: 50%; height: 50%; display: block; margin: 0 auto;">
                     </div>
                 </div>
             </section>
