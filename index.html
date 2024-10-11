@@ -207,8 +207,27 @@
                 </div>
                 <!-- 新插入的div -->
                 <div class="new-div">
-                    <!-- 新div的内容 -->
-                    <p>Additional content goes here...</p>
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <br>
+                            <h2 class="title is-3">How Score distributions are being Morphed by CoVer using Corruptions with Severity Levels 1-5</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="gifSelector" class="has-text-centered">
+                        Select the Corruption Type
+                    </label>
+                    <select id="gifSelector" class="select columns is-centered" style="margin: 0 auto; display: block;">
+                        <option value="static/images/example2.gif" selected>Speckle Noise</option>
+                        <option value="static/images/example1.gif">Fog</option>
+                        <!-- <option value="static/images/example3.gif">Option 3</option> -->
+                    </select>
+                    <br>
+                    <div class="container is-max-desktop">
+                        <div class="hero-body">
+                            <img id="displayedImage" src="static/images/example2.gif" style="width: 50%; height: 50%; display: block; margin: 0 auto;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
