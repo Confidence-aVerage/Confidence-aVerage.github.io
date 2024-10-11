@@ -37,6 +37,24 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+
+    <style>
+        .flex-container {
+            display: flex;
+            /* 启用Flexbox布局 */
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+        }
+        
+        .flex-container>div {
+            flex: 1;
+            /* 两个div平分空间 */
+            text-align: center;
+            /* 文本居中显示 */
+        }
+    </style>
 </head>
 
 <body>
@@ -178,21 +196,26 @@
 
     <section class="hero teaser">
         <div class="container is-max-desktop">
-            <div class="hero-body">
-                <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video> -->
-                <img src="static/images/Figure1.png" alt="Effect of CoVer">
-                <h2 class="subtitle has-text-centered">
-                    <span class="dnerf">CoVer</span> with multiple inputs performs a better ID-OOD separability
-                </h2>
+            <!-- Flex Container -->
+            <div class="flex-container">
+                <!-- 原有的div -->
+                <div class="hero-body">
+                    <img src="static/images/Figure1.png" alt="Effect of CoVer">
+                    <h2 class="subtitle has-text-centered">
+                        <span class="dnerf">CoVer</span> with multiple inputs performs a better ID-OOD separability
+                    </h2>
+                </div>
+                <!-- 新插入的div -->
+                <div class="new-div">
+                    <!-- 新div的内容 -->
+                    <p>Additional content goes here...</p>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="hero is-light is-small">
+    <!-- <section class="hero is-light is-small">
         <div class="hero-body">
             <div class="container">
                 <div id="results-carousel" class="carousel results-carousel">
@@ -247,7 +270,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="hero is-light">
