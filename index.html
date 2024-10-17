@@ -288,6 +288,9 @@
         </div>
     </section>
 
+    <br>
+    <br>
+
     <section class="hero">
         <div class="container is-max-desktop">
             <div class="hero-body is-centered has-text-centered">
@@ -346,7 +349,6 @@
                 <h2 class="subtitle has-text-centered">
                     Additionally, we conduct various ablation studies to provide a thorough understanding of <span class="dnerf">CoVer</span>.
                 </h2>
-                <br>
                 <img src="static/images/ablation.jpg" alt="Confidence Average">
                 <h2 class="has-text-centered">
                     Ablation Study. (a) superiority of the multi-dimensional scoring framework; (b) exploration of different quantity of expanded input dimensions; (c) using different severity levels of a specific corruption type; (d) comparison with different realizations
@@ -356,13 +358,15 @@
         </div>
     </section>
 
+    <br>
+    <br>
 
     <section class="hero hero is-light is-small">
         <div class="container hero-body is-max-desktop">
             <!-- Abstract. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Call for Explanation & Theoretical Understanding</h2>
+                    <h2 class="title is-3">Call for Explanation and Validation</h2>
                     <div class="content has-text-justified">
                         <p>
                             We are releasing two calls alongside this paper to encourage, increase, and broaden the reach of scientific interactions and collaborations. The two calls are an invitation for fellow researchers to address two questions that are not yet sufficiently
@@ -377,6 +381,18 @@
                         </p>
                         <p>
                             For each call we provide possible directions to explore the answer, however, we encourage novel quests beyond what's suggested below.
+                        </p>
+                        <p>
+                            <strong>Call for explanation and theoretical understanding.</strong> In our paper, we provide a possible explanation of the effectiveness of CoVer from the empirical perspective. We suggest that common corruptions might act
+                            as perturbations of high-frequency features within the input representation. For OOD samples, which inherently lack ID semantic features, altering high-frequency features could potentially lead to notable changes in model confidence,
+                            while the ID data shows relatively better resistance on it. However, there lacks of rigorous theoretical understandings on this empirical observation.
+                        </p>
+                        <p>
+                            <strong>Call for validation in other fields.</strong> We believe any domains that use a deep neural network (or a similar intelligent system) to learn representations of data when optimizing for a training task could be a fertile
+                            ground for validating CoVer. A A clear domain is natural language processing, where both original and corrupted inputs, similar to CoVer, could be applied to language models like LLMs. Can the combination of original and corrupted
+                            inputs effectively enhance the OOD detection capability in language models like LLMs? Another possible domain for validation could be time-series models, where temporal disruptions in the input space could simulate perturbations
+                            analogous to our proposed method. Would such input variations help to enhance OOD detection in time-series predictions? We invite exploration of CoVer's potential in these and other fields to assess whether utilizing both original
+                            and perturbed inputs can provide new perspectives for improving model performance and robustness.
                         </p>
                         <p>
                             We are still working to set up a proper portal for submitting, reviewing and discussing answers to both calls. In the meantime, feel free to email <a href="mailto:zhangboxuan1005@gmail.com">zhangboxuan1005@gmail.com</a> to
